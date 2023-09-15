@@ -5,6 +5,14 @@ Email: admin@gmail.com
 
 Password: Admin202#
 
+### Project Setup
+- Clone the repository using HTTPS or SSH
+- Move into the project repo directory and install the required packages using `npm install`
+- Install json-server using `npm install json-server`
+- Start the server using `json-server --watch db.json`
+- Start the angular project using `ng serve`
+- Open `http://localhost:4200/` in your browser and login using the default credentials
+
 ### Structure
 - User is given 'Login' page first. If not a user already, taken to Register.
 - Login has two values:
