@@ -1,0 +1,37 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <div class="container">
+      <h6 class="card-title">Please Login to Continue</h6>
+      <!--Login Form-->
+      <form class="user-login" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+        <div class="row">
+          <div class="col-md-12 roundedTextBox mb-3">
+            <!--Email-->
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control mb-2" id="inputEmail" formControlName="email"
+              placeholder="Enter Email">
+            <!-- <small id="emailHelp" class="form-text text-muted ml-2">We'll never share your email with anyone else.</small> -->
+            <div *ngIf="submitted && formControl['email'].errors" class="text-danger">
+              <div *ngIf="formControl['email'].errors['email']">Email must be valid.</div>
+              <div *ngIf="formControl['email'].errors['required']">Email is required.</div>
+            </div>
+          </div>
+          <div class="col-md-12 roundedTextBox mb-3">
+            <!--Password-->
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control mb-2" id="inputPassword" formControlName="password"
+              placeholder="Enter Password">
+            <div *ngIf="submitted && formControl['password'].errors" class="text-danger">
+              <div *ngIf="formControl['password'].errors['required']">Password is required.</div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="buttons text-center">
+          <!--Login Button-->
+          <button class="btn btn-primary" type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

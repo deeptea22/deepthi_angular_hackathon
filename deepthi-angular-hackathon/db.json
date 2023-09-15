@@ -1,0 +1,22 @@
+{
+  "customers": [
+    {
+      "email": "admin@gmail.com",
+      "name": "admin",
+      "address": "123 Street Chennai",
+      "accNo": "1234567890",
+      "mobileNo": "9998887776",
+      "password": "Admin202#",
+      "id": 1
+    },
+    {
+      "email": "john@gmail.com",
+      "name": "John",
+      "address": "321 Street, Canada",
+      "accNo": "1234567888",
+      "mobileNo": "1231231234",
+      "password": "John123$",
+      "id": 2
+    }
+  ]
+}
